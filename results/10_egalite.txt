@@ -1,0 +1,82 @@
+.start
+resn 0
+push 1
+push 1
+cmpeq
+dbg
+push 1
+push 2
+cmpeq
+dbg
+push 1
+push 1
+cmpne
+dbg
+push 1
+push 2
+cmpne
+dbg
+push 3
+push 4
+add
+push 7
+cmpeq
+dbg
+push 3
+push 4
+mul
+push 12
+cmpne
+dbg
+push 1
+push 1
+cmpeq
+push 1
+cmpeq
+dbg
+push 2
+push 2
+cmpeq
+push 2
+cmpeq
+dbg
+push 1
+push 2
+cmpeq
+push 0
+cmpeq
+dbg
+push 5
+push 5
+cmpeq
+push 0
+cmpne
+dbg
+push 0
+push 1
+sub
+push 0
+push 1
+sub
+cmpeq
+dbg
+push 0
+push 1
+not
+cmpeq
+dbg
+push 0
+not
+push 1
+cmpeq
+dbg
+push 2
+push 3
+cmplt
+push 3
+push 2
+cmpgt
+cmpeq
+dbg
+halt
+

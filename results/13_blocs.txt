@@ -1,0 +1,24 @@
+.start
+resn 0
+push 1
+dbg
+push 2
+dbg
+push 3
+dbg
+push 4
+dbg
+push 5
+dbg
+push 6
+dbg
+push 7
+dbg
+push 8
+dbg
+push 9
+dbg
+push 10
+dbg
+halt
+

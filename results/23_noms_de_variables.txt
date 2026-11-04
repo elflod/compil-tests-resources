@@ -1,0 +1,94 @@
+.start
+resn 15
+push 1
+dup
+set 0
+drop 1
+push 2
+dup
+set 1
+drop 1
+push 3
+dup
+set 2
+drop 1
+push 4
+dup
+set 3
+drop 1
+push 5
+dup
+set 4
+drop 1
+push 6
+dup
+set 5
+drop 1
+push 7
+dup
+set 6
+drop 1
+push 8
+dup
+set 7
+drop 1
+push 9
+dup
+set 8
+drop 1
+get 0
+dbg
+get 1
+dbg
+get 2
+dbg
+get 3
+dbg
+get 4
+dbg
+get 5
+dbg
+get 6
+dbg
+get 7
+dbg
+get 8
+dbg
+push 123
+dup
+set 9
+drop 1
+get 9
+dbg
+push 1
+dup
+set 10
+drop 1
+push 2
+dup
+set 11
+drop 1
+push 3
+dup
+set 12
+drop 1
+push 4
+dup
+set 13
+drop 1
+push 5
+dup
+set 14
+drop 1
+get 10
+get 11
+add
+get 12
+add
+get 13
+add
+get 14
+add
+dbg
+halt
+

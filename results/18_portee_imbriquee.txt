@@ -1,0 +1,52 @@
+.start
+resn 5
+push 1
+dup
+set 0
+drop 1
+push 2
+dup
+set 1
+drop 1
+push 10
+dup
+set 2
+drop 1
+get 2
+dbg
+get 1
+dbg
+push 20
+dup
+set 3
+drop 1
+get 2
+get 3
+add
+dbg
+push 11
+dup
+set 2
+drop 1
+push 100
+dup
+set 4
+drop 1
+get 4
+get 3
+add
+dbg
+get 2
+dbg
+get 1
+dbg
+push 22
+dup
+set 1
+drop 1
+get 0
+dbg
+get 1
+dbg
+halt
+

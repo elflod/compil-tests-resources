@@ -1,0 +1,56 @@
+.start
+resn 8
+push 1
+dup
+set 0
+drop 1
+push 2
+dup
+set 1
+drop 1
+push 3
+dup
+set 2
+drop 1
+push 4
+dup
+set 3
+drop 1
+push 5
+dup
+set 4
+drop 1
+push 6
+dup
+set 5
+drop 1
+push 7
+dup
+set 6
+drop 1
+get 0
+dbg
+get 1
+dbg
+get 2
+dbg
+get 3
+get 4
+add
+get 5
+add
+get 6
+add
+dbg
+get 0
+get 1
+add
+get 2
+add
+dup
+set 7
+drop 1
+get 7
+dbg
+halt
+

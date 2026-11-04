@@ -1,0 +1,131 @@
+.start
+resn 0
+push 1
+push 1
+and
+dbg
+push 1
+push 0
+and
+dbg
+push 0
+push 1
+and
+dbg
+push 0
+push 0
+and
+dbg
+push 1
+push 1
+or
+dbg
+push 1
+push 0
+or
+dbg
+push 0
+push 1
+or
+dbg
+push 0
+push 0
+or
+dbg
+push 5
+push 3
+and
+dbg
+push 5
+push 0
+or
+dbg
+push 0
+push 7
+or
+dbg
+push 2
+push 3
+and
+push 4
+and
+dbg
+push 2
+push 0
+and
+push 4
+and
+dbg
+push 0
+push 0
+or
+push 5
+or
+dbg
+push 0
+push 0
+or
+push 0
+or
+dbg
+push 1
+push 0
+push 0
+and
+or
+dbg
+push 1
+push 0
+or
+push 0
+and
+dbg
+push 0
+push 1
+and
+push 1
+or
+dbg
+push 0
+push 1
+push 1
+or
+and
+dbg
+push 1
+push 2
+cmplt
+push 2
+push 3
+cmplt
+and
+dbg
+push 1
+push 2
+cmplt
+push 3
+push 2
+cmplt
+and
+dbg
+push 1
+push 2
+cmpgt
+push 2
+push 1
+cmpgt
+or
+dbg
+push 0
+not
+push 0
+not
+and
+dbg
+push 1
+push 0
+and
+not
+dbg
+halt
+

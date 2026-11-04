@@ -1,0 +1,110 @@
+.start
+resn 0
+push 0
+push 5
+sub
+dbg
+push 0
+push 0
+sub
+dbg
+push 0
+push 0
+push 5
+sub
+sub
+dbg
+push 0
+push 0
+push 0
+push 5
+sub
+sub
+sub
+dbg
+push 0
+push 0
+push 0
+push 5
+sub
+sub
+sub
+dbg
+push 2
+push 0
+push 3
+sub
+sub
+dbg
+push 2
+push 0
+push 0
+push 3
+sub
+sub
+sub
+dbg
+push 2
+push 0
+push 3
+sub
+mul
+dbg
+push 0
+push 2
+sub
+push 0
+push 3
+sub
+mul
+dbg
+push 0
+push 3
+push 4
+add
+sub
+dbg
+push 0
+push 0
+push 3
+sub
+sub
+dbg
+push 0
+push 2
+sub
+push 5
+add
+dbg
+push 5
+push 0
+push 2
+sub
+add
+dbg
+push 0
+push 3
+sub
+push 4
+mul
+push 1
+add
+dbg
+push 0
+push 3
+push 4
+mul
+sub
+push 1
+add
+dbg
+push 10
+push 0
+push 2
+push 3
+add
+sub
+sub
+dbg
+halt
+

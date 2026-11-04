@@ -39,4 +39,5 @@ Le dossier results contient les fichiers de code machine qui doivent être gén�
 
 ## Contributeurs
 - Barret Florian
+- Charrier Chloé
 - Romano Mathéo

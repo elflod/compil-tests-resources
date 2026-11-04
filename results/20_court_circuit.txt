@@ -1,0 +1,76 @@
+.start
+resn 1
+push 0
+dup
+set 0
+drop 1
+push 0
+push 5
+dup
+set 0
+and
+drop 1
+get 0
+dbg
+push 1
+push 5
+dup
+set 0
+and
+drop 1
+get 0
+dbg
+push 0
+dup
+set 0
+drop 1
+push 1
+push 7
+dup
+set 0
+or
+drop 1
+get 0
+dbg
+push 0
+push 7
+dup
+set 0
+or
+drop 1
+get 0
+dbg
+push 0
+dup
+set 0
+drop 1
+push 0
+push 1
+dup
+set 0
+and
+push 2
+dup
+set 0
+or
+dbg
+get 0
+dbg
+push 0
+dup
+set 0
+drop 1
+push 1
+push 3
+dup
+set 0
+push 4
+dup
+set 0
+and
+or
+dbg
+get 0
+dbg
+halt
+

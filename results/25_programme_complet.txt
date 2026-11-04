@@ -1,0 +1,93 @@
+.start
+resn 5
+push 10
+dup
+set 0
+drop 1
+push 3
+dup
+set 1
+drop 1
+get 0
+get 1
+div
+dup
+set 2
+drop 1
+get 2
+dbg
+get 0
+get 1
+mod
+dbg
+get 2
+get 1
+mul
+get 0
+get 1
+mod
+add
+get 0
+cmpeq
+dbg
+push 100
+dup
+set 1
+dup
+set 3
+drop 1
+get 3
+get 1
+add
+dbg
+get 3
+get 1
+sub
+dup
+set 4
+drop 1
+get 4
+dbg
+get 4
+not
+dbg
+get 2
+dbg
+get 0
+dbg
+get 1
+dbg
+get 0
+get 1
+cmpgt
+get 1
+get 2
+cmpgt
+and
+push 0
+or
+dbg
+push 1
+dup
+set 0
+push 2
+dup
+set 1
+push 3
+dup
+set 2
+mul
+add
+dup
+set 2
+drop 1
+get 2
+dbg
+get 0
+get 1
+add
+get 2
+add
+dbg
+halt
+
