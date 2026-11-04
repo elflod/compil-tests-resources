@@ -34,4 +34,3 @@ push 0
 not
 dbg
 halt
-

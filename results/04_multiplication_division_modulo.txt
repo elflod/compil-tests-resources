@@ -79,4 +79,3 @@ push 12345
 mul
 dbg
 halt
-
