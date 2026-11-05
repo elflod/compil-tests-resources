@@ -5,6 +5,8 @@ Ressources communes pour les tests de compilation.
 <div style="background-color: #8e0000;">
 
 > Merci de garder les fichiers en LF (fin de ligne avec \n seulement) !!!
+> 
+> Si vous n'êtes pas sûrs de vous, demandez !!!
 
 </div>
 
