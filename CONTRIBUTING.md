@@ -11,4 +11,4 @@ Par défaut, pour vous mettre à jour, vous n'avez pas besoin d'autorisations sp
 |Quand vous êtes prêt à intégrer vos modifs dans la branche principale, merger la branche principale dans la votre|git merge master|
 |Sur l'interface GitHub, [créer une Pull Request](https://github.com/elflod/compil-tests-resources/compare) et changer la branche 'compare' avec la votre ||
 |Mettez vous en tant que 'Assignee' et ajoutez un reviewer (peu importe qui c'est, le but c'est que ce soit testé/relu par au moins une autre personne.        |                                           |
-|Une fois que vous avez obtenu au moins une approbation, vous pouvez merger depuis l'interface GitHub. Supprimer votre branche initiale aussi ! (un bouton apparaîtra pour vous le proposer)||
+|Une fois que vous avez obtenu au moins une approbation, vous pouvez faire l'option squash and merge depuis l'interface GitHub. Supprimer votre branche initiale aussi ! (un bouton apparaîtra pour vous le proposer)||
