@@ -1,3 +1,4 @@
+void main()
 {
     int a, ab, abc, a1, b2, x_y, _z, A, Ab;
     a = 1; ab = 2; abc = 3; a1 = 4; b2 = 5; x_y = 6; _z = 7; A = 8; Ab = 9;

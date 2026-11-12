@@ -1,3 +1,4 @@
+void main()
 {
        debug    1   ;
     debug
