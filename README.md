@@ -48,3 +48,4 @@ Le dossier results contient les fichiers de code machine qui doivent être gén�
 - Charrier Chloé
 - Lavenant Jordan
 - Romano Mathéo
+- Roussel Marc

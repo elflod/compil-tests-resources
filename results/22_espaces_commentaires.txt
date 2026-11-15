@@ -19,6 +19,8 @@ dbg
 push 9
 dbg
 push 10
+push 2
+div
 dbg
 push 1
 push 2

@@ -1,6 +1,6 @@
 void main()
 {
-       debug    1   ;
+    debug 1;
     debug
     2
     ;
@@ -13,10 +13,13 @@ void main()
     /* commentaire
        sur plusieurs
        lignes */
+    /**/
     debug 8;
     debug /* au milieu */ 9;
-    debug(10);
+    debug(10/2);
     debug(1+2)*3;
+    /* commentaire avec * au milieu */
     debug-1;
     debug!0;
 }
+// fin par un commentaire
