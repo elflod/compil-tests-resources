@@ -1,0 +1,83 @@
+.start
+resn 1
+push 0
+dup
+set 0
+drop 1
+.loop0
+get 0
+push 1
+add
+dup
+set 0
+drop 1
+get 0
+push 2
+cmpeq
+jumpf ifend0
+jump continue0
+.ifend0
+get 0
+push 5
+cmpeq
+jumpf ifend1
+jump loopend0
+.ifend1
+get 0
+dbg
+.continue0
+get 0
+push 10
+cmplt
+jumpf ifend2
+jump skipelse2
+.ifend2
+jump loopend0
+.skipelse2
+jump loop0
+.loopend0
+push 100
+dbg
+push 0
+dup
+set 0
+drop 1
+.loop1
+get 0
+push 1
+add
+dup
+set 0
+drop 1
+jump continue1
+push 999
+dbg
+.continue1
+get 0
+push 3
+cmplt
+jumpf ifend3
+jump skipelse3
+.ifend3
+jump loopend1
+.skipelse3
+jump loop1
+.loopend1
+get 0
+dbg
+.loop2
+jump loopend2
+push 998
+dbg
+.continue2
+push 1
+jumpf ifend4
+jump skipelse4
+.ifend4
+jump loopend2
+.skipelse4
+jump loop2
+.loopend2
+push 200
+dbg
+halt

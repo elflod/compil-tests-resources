@@ -1,0 +1,4 @@
+{
+    int i;
+    for (i = 0; i < 3) debug i;
+}

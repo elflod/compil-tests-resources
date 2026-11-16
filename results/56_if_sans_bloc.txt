@@ -1,0 +1,194 @@
+.start
+resn 0
+push 1
+jumpf ifend0
+push 1
+dbg
+.ifend0
+push 0
+jumpf ifend1
+push 2
+dbg
+.ifend1
+push 5
+jumpf ifend2
+push 3
+dbg
+.ifend2
+push 0
+not
+jumpf ifend3
+push 4
+dbg
+.ifend3
+push 2
+push 3
+mul
+push 6
+sub
+jumpf ifend4
+push 5
+dbg
+.ifend4
+push 1
+jumpf ifend5
+push 6
+dbg
+jump skipelse5
+.ifend5
+push 7
+dbg
+.skipelse5
+push 0
+jumpf ifend6
+push 8
+dbg
+jump skipelse6
+.ifend6
+push 9
+dbg
+.skipelse6
+push 1
+jumpf ifend7
+push 1
+jumpf ifend8
+push 10
+dbg
+.ifend8
+.ifend7
+push 1
+jumpf ifend9
+push 0
+jumpf ifend10
+push 11
+dbg
+.ifend10
+.ifend9
+push 0
+jumpf ifend11
+push 1
+jumpf ifend12
+push 12
+dbg
+.ifend12
+.ifend11
+push 1
+jumpf ifend13
+push 1
+jumpf ifend14
+push 13
+dbg
+jump skipelse14
+.ifend14
+push 14
+dbg
+.skipelse14
+.ifend13
+push 1
+jumpf ifend15
+push 0
+jumpf ifend16
+push 15
+dbg
+jump skipelse16
+.ifend16
+push 16
+dbg
+.skipelse16
+.ifend15
+push 0
+jumpf ifend17
+push 1
+jumpf ifend18
+push 17
+dbg
+jump skipelse18
+.ifend18
+push 18
+dbg
+.skipelse18
+.ifend17
+push 0
+jumpf ifend19
+push 19
+dbg
+jump skipelse19
+.ifend19
+push 1
+jumpf ifend20
+push 0
+jumpf ifend21
+push 20
+dbg
+jump skipelse21
+.ifend21
+push 21
+dbg
+.skipelse21
+.ifend20
+.skipelse19
+push 1
+jumpf ifend22
+push 1
+jumpf ifend23
+push 0
+jumpf ifend24
+push 22
+dbg
+jump skipelse24
+.ifend24
+push 23
+dbg
+.skipelse24
+jump skipelse23
+.ifend23
+push 24
+dbg
+.skipelse23
+.ifend22
+push 0
+jumpf ifend25
+push 25
+dbg
+jump skipelse25
+.ifend25
+push 0
+jumpf ifend26
+push 26
+dbg
+jump skipelse26
+.ifend26
+push 0
+jumpf ifend27
+push 27
+dbg
+.ifend27
+.skipelse26
+.skipelse25
+push 1
+push 1
+add
+push 2
+cmpeq
+jumpf ifend28
+push 28
+dbg
+jump skipelse28
+.ifend28
+push 29
+dbg
+.skipelse28
+push 3
+push 2
+cmplt
+push 2
+push 3
+cmplt
+or
+jumpf ifend29
+push 30
+dbg
+.ifend29
+push 31
+dbg
+halt
