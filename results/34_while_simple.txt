@@ -8,7 +8,7 @@ drop 1
 get 0
 push 5
 cmplt
-jumpf ifend1
+jumpf ifend0
 get 0
 dbg
 get 0
@@ -17,10 +17,10 @@ add
 dup
 set 0
 drop 1
-jump skipelse1
-.ifend1
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
 push 100
@@ -29,11 +29,11 @@ push 10
 dup
 set 0
 drop 1
-.loop2
+.loop1
 get 0
 push 7
 cmpgt
-jumpf ifend3
+jumpf ifend1
 get 0
 push 1
 sub
@@ -42,12 +42,12 @@ set 0
 drop 1
 get 0
 dbg
-jump skipelse3
-.ifend3
-jump loopend2
-.skipelse3
-jump loop2
-.loopend2
+jump skipelse1
+.ifend1
+jump loopend1
+.skipelse1
+jump loop1
+.loopend1
 push 0
 dup
 set 1
@@ -56,11 +56,11 @@ push 1
 dup
 set 0
 drop 1
-.loop4
+.loop2
 get 0
 push 10
 cmple
-jumpf ifend5
+jumpf ifend2
 get 1
 get 0
 add
@@ -73,12 +73,12 @@ add
 dup
 set 0
 drop 1
-jump skipelse5
-.ifend5
-jump loopend4
-.skipelse5
-jump loop4
-.loopend4
+jump skipelse2
+.ifend2
+jump loopend2
+.skipelse2
+jump loop2
+.loopend2
 get 1
 dbg
 halt

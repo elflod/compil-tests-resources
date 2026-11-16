@@ -6,13 +6,13 @@ set 0
 drop 1
 .loop0
 push 1
-jumpf ifend1
+jumpf ifend0
 get 0
 push 3
 cmpeq
-jumpf ifend2
+jumpf ifend1
 jump loopend0
-.ifend2
+.ifend1
 get 0
 dbg
 get 0
@@ -21,35 +21,35 @@ add
 dup
 set 0
 drop 1
-jump skipelse1
-.ifend1
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
 push 100
 dbg
-.loop3
+.loop1
 push 1
-jumpf ifend4
-jump loopend3
-jump skipelse4
-.ifend4
-jump loopend3
-.skipelse4
-jump loop3
-.loopend3
+jumpf ifend2
+jump loopend1
+jump skipelse2
+.ifend2
+jump loopend1
+.skipelse2
+jump loop1
+.loopend1
 push 200
 dbg
 push 0
 dup
 set 0
 drop 1
-.loop5
+.loop2
 get 0
 push 10
 cmplt
-jumpf ifend6
+jumpf ifend3
 get 0
 push 1
 add
@@ -61,29 +61,29 @@ get 0
 mul
 push 20
 cmpgt
-jumpf ifend7
-jump loopend5
-.ifend7
-jump skipelse6
-.ifend6
-jump loopend5
-.skipelse6
-jump loop5
-.loopend5
+jumpf ifend4
+jump loopend2
+.ifend4
+jump skipelse3
+.ifend3
+jump loopend2
+.skipelse3
+jump loop2
+.loopend2
 get 0
 dbg
-.loop8
+.loop3
 push 1
-jumpf ifend9
+jumpf ifend5
 push 300
 dbg
-jump loopend8
+jump loopend3
 push 301
 dbg
-jump skipelse9
-.ifend9
-jump loopend8
-.skipelse9
-jump loop8
-.loopend8
+jump skipelse5
+.ifend5
+jump loopend3
+.skipelse5
+jump loop3
+.loopend3
 halt

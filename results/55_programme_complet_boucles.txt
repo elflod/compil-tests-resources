@@ -16,7 +16,7 @@ drop 1
 get 6
 push 10
 cmplt
-jumpf ifend1
+jumpf ifend0
 get 3
 dbg
 get 3
@@ -40,10 +40,10 @@ add
 dup
 set 6
 drop 1
-jump skipelse1
-.ifend1
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
 push 1
@@ -54,11 +54,11 @@ push 1
 dup
 set 6
 drop 1
-.loop2
+.loop1
 get 6
 push 6
 cmple
-jumpf ifend3
+jumpf ifend1
 get 5
 get 6
 mul
@@ -67,19 +67,19 @@ set 5
 drop 1
 get 5
 dbg
-.continue2
+.continue1
 get 6
 push 1
 add
 dup
 set 6
 drop 1
-jump skipelse3
-.ifend3
-jump loopend2
-.skipelse3
-jump loop2
-.loopend2
+jump skipelse1
+.ifend1
+jump loopend1
+.skipelse1
+jump loop1
+.loopend1
 push 48
 dup
 set 3
@@ -88,11 +88,11 @@ push 18
 dup
 set 4
 drop 1
-.loop4
+.loop2
 get 4
 push 0
 cmpne
-jumpf ifend5
+jumpf ifend2
 get 3
 get 4
 mod
@@ -107,23 +107,23 @@ get 5
 dup
 set 4
 drop 1
-jump skipelse5
-.ifend5
-jump loopend4
-.skipelse5
-jump loop4
-.loopend4
+jump skipelse2
+.ifend2
+jump loopend2
+.skipelse2
+jump loop2
+.loopend2
 get 3
 dbg
 push 2
 dup
 set 0
 drop 1
-.loop6
+.loop3
 get 0
 push 30
 cmple
-jumpf ifend7
+jumpf ifend3
 push 1
 dup
 set 2
@@ -132,55 +132,55 @@ push 2
 dup
 set 1
 drop 1
-.loop8
+.loop4
 get 1
 get 1
 mul
 get 0
 cmple
-jumpf ifend9
+jumpf ifend4
 get 0
 get 1
 mod
 push 0
 cmpeq
-jumpf ifend10
+jumpf ifend5
 push 0
 dup
 set 2
 drop 1
-jump loopend8
-.ifend10
+jump loopend4
+.ifend5
 get 1
 push 1
 add
 dup
 set 1
 drop 1
-jump skipelse9
-.ifend9
-jump loopend8
-.skipelse9
-jump loop8
-.loopend8
+jump skipelse4
+.ifend4
+jump loopend4
+.skipelse4
+jump loop4
+.loopend4
 get 2
-jumpf ifend11
+jumpf ifend6
 get 0
 dbg
-.ifend11
-.continue6
+.ifend6
+.continue3
 get 0
 push 1
 add
 dup
 set 0
 drop 1
-jump skipelse7
-.ifend7
-jump loopend6
-.skipelse7
-jump loop6
-.loopend6
+jump skipelse3
+.ifend3
+jump loopend3
+.skipelse3
+jump loop3
+.loopend3
 push 6
 dup
 set 0
@@ -189,25 +189,25 @@ push 0
 dup
 set 6
 drop 1
-.loop12
+.loop5
 get 0
 push 1
 cmpne
-jumpf ifend13
+jumpf ifend7
 get 0
 push 2
 mod
 push 0
 cmpeq
-jumpf ifend14
+jumpf ifend8
 get 0
 push 2
 div
 dup
 set 0
 drop 1
-jump skipelse14
-.ifend14
+jump skipelse8
+.ifend8
 push 3
 get 0
 mul
@@ -216,19 +216,19 @@ add
 dup
 set 0
 drop 1
-.skipelse14
+.skipelse8
 get 6
 push 1
 add
 dup
 set 6
 drop 1
-jump skipelse13
-.ifend13
-jump loopend12
-.skipelse13
-jump loop12
-.loopend12
+jump skipelse7
+.ifend7
+jump loopend5
+.skipelse7
+jump loop5
+.loopend5
 get 6
 dbg
 halt

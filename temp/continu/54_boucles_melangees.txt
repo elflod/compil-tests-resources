@@ -12,16 +12,16 @@ drop 1
 get 0
 push 4
 cmplt
-jumpf ifend1
+jumpf ifend0
 push 0
 dup
 set 1
 drop 1
-.loop2
+.loop1
 get 1
 push 4
 cmplt
-jumpf ifend3
+jumpf ifend1
 get 1
 push 1
 add
@@ -31,14 +31,14 @@ drop 1
 get 1
 push 3
 cmpeq
-jumpf ifend4
-jump loop2
-.ifend4
+jumpf ifend2
+jump loop1
+.ifend2
 push 0
 dup
 set 2
 drop 1
-.loop5
+.loop2
 get 2
 push 1
 add
@@ -48,38 +48,38 @@ drop 1
 get 2
 push 2
 cmpeq
-jumpf ifend6
-jump loopend5
-.ifend6
+jumpf ifend3
+jump loopend2
+.ifend3
 get 3
 push 1
 add
 dup
 set 3
 drop 1
-.continue5
+.continue2
 get 2
 push 10
 cmplt
-jumpf ifend7
-jump skipelse7
-.ifend7
-jump loopend5
-.skipelse7
-jump loop5
-.loopend5
+jumpf ifend4
+jump skipelse4
+.ifend4
+jump loopend2
+.skipelse4
+jump loop2
+.loopend2
 get 0
 push 2
 cmpeq
-jumpf ifend8
-jump loopend2
-.ifend8
-jump skipelse3
-.ifend3
-jump loopend2
-.skipelse3
-jump loop2
-.loopend2
+jumpf ifend5
+jump loopend1
+.ifend5
+jump skipelse1
+.ifend1
+jump loopend1
+.skipelse1
+jump loop1
+.loopend1
 .continue0
 get 0
 push 1
@@ -87,10 +87,10 @@ add
 dup
 set 0
 drop 1
-jump skipelse1
-.ifend1
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
 get 3

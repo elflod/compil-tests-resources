@@ -8,7 +8,7 @@ drop 1
 get 0
 push 6
 cmplt
-jumpf ifend1
+jumpf ifend0
 get 0
 push 1
 add
@@ -20,15 +20,15 @@ push 2
 mod
 push 0
 cmpeq
-jumpf ifend2
+jumpf ifend1
 jump loop0
-.ifend2
+.ifend1
 get 0
 dbg
-jump skipelse1
-.ifend1
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
 push 0
@@ -39,11 +39,11 @@ push 0
 dup
 set 1
 drop 1
-.loop3
+.loop1
 get 0
 push 10
 cmplt
-jumpf ifend4
+jumpf ifend2
 get 0
 push 1
 add
@@ -55,21 +55,21 @@ push 3
 mod
 push 0
 cmpeq
-jumpf ifend5
-jump loop3
-.ifend5
+jumpf ifend3
+jump loop1
+.ifend3
 get 1
 get 0
 add
 dup
 set 1
 drop 1
-jump skipelse4
-.ifend4
-jump loopend3
-.skipelse4
-jump loop3
-.loopend3
+jump skipelse2
+.ifend2
+jump loopend1
+.skipelse2
+jump loop1
+.loopend1
 get 1
 dbg
 halt

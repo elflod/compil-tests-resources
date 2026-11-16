@@ -17,31 +17,31 @@ drop 1
 get 0
 push 4
 cmplt
-jumpf ifend1
-jump skipelse1
-.ifend1
+jumpf ifend0
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
-.loop2
+.loop1
 get 0
 push 1
 sub
 dup
 set 0
 drop 1
-.continue2
+.continue1
 get 0
 push 0
 cmpgt
-jumpf ifend3
-jump skipelse3
-.ifend3
-jump loopend2
-.skipelse3
-jump loop2
-.loopend2
+jumpf ifend1
+jump skipelse1
+.ifend1
+jump loopend1
+.skipelse1
+jump loop1
+.loopend1
 get 0
 dbg
 halt

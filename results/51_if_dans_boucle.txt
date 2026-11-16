@@ -16,28 +16,28 @@ drop 1
 get 0
 push 10
 cmple
-jumpf ifend1
+jumpf ifend0
 get 0
 push 2
 mod
 push 0
 cmpeq
-jumpf ifend2
+jumpf ifend1
 get 2
 get 0
 add
 dup
 set 2
 drop 1
-jump skipelse2
-.ifend2
+jump skipelse1
+.ifend1
 get 1
 get 0
 add
 dup
 set 1
 drop 1
-.skipelse2
+.skipelse1
 .continue0
 get 0
 push 1
@@ -45,10 +45,10 @@ add
 dup
 set 0
 drop 1
-jump skipelse1
-.ifend1
+jump skipelse0
+.ifend0
 jump loopend0
-.skipelse1
+.skipelse0
 jump loop0
 .loopend0
 get 1
@@ -59,63 +59,63 @@ push 1
 dup
 set 0
 drop 1
-.loop3
+.loop1
 get 0
 push 15
 cmple
-jumpf ifend4
+jumpf ifend2
 get 0
 push 15
+mod
+push 0
+cmpeq
+jumpf ifend3
+push 0
+push 15
+sub
+dbg
+jump skipelse3
+.ifend3
+get 0
+push 3
+mod
+push 0
+cmpeq
+jumpf ifend4
+push 0
+push 3
+sub
+dbg
+jump skipelse4
+.ifend4
+get 0
+push 5
 mod
 push 0
 cmpeq
 jumpf ifend5
 push 0
-push 15
+push 5
 sub
 dbg
 jump skipelse5
 .ifend5
 get 0
-push 3
-mod
-push 0
-cmpeq
-jumpf ifend6
-push 0
-push 3
-sub
 dbg
-jump skipelse6
-.ifend6
-get 0
-push 5
-mod
-push 0
-cmpeq
-jumpf ifend7
-push 0
-push 5
-sub
-dbg
-jump skipelse7
-.ifend7
-get 0
-dbg
-.skipelse7
-.skipelse6
 .skipelse5
-.continue3
+.skipelse4
+.skipelse3
+.continue1
 get 0
 push 1
 add
 dup
 set 0
 drop 1
-jump skipelse4
-.ifend4
-jump loopend3
-.skipelse4
-jump loop3
-.loopend3
+jump skipelse2
+.ifend2
+jump loopend1
+.skipelse2
+jump loop1
+.loopend1
 halt
