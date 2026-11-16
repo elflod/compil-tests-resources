@@ -13,15 +13,13 @@ add
 dup
 set 0
 drop 1
-.continue0
 get 0
 push 4
 cmplt
+not
 jumpf ifend0
-jump skipelse0
-.ifend0
 jump loopend0
-.skipelse0
+.ifend0
 jump loop0
 .loopend0
 .loop1
@@ -31,15 +29,13 @@ sub
 dup
 set 0
 drop 1
-.continue1
 get 0
 push 0
 cmpgt
+not
 jumpf ifend1
-jump skipelse1
-.ifend1
 jump loopend1
-.skipelse1
+.ifend1
 jump loop1
 .loopend1
 get 0

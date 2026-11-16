@@ -3,7 +3,6 @@ resn 4
 push 0
 dup
 set 0
-drop 1
 .loop0
 get 0
 push 2
@@ -17,13 +16,11 @@ set 1
 drop 1
 get 1
 dbg
-.continue0
 get 0
 push 1
 add
 dup
 set 0
-drop 1
 jump skipelse0
 .ifend0
 jump loopend0
@@ -39,7 +36,6 @@ dbg
 push 0
 dup
 set 0
-drop 1
 .loop1
 get 0
 push 2
@@ -51,13 +47,11 @@ set 3
 drop 1
 get 3
 dbg
-.continue1
 get 0
 push 1
 add
 dup
 set 0
-drop 1
 jump skipelse1
 .ifend1
 jump loopend1

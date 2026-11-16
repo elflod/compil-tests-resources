@@ -11,7 +11,6 @@ drop 1
 push 0
 dup
 set 6
-drop 1
 .loop0
 get 6
 push 10
@@ -33,13 +32,11 @@ get 5
 dup
 set 4
 drop 1
-.continue0
 get 6
 push 1
 add
 dup
 set 6
-drop 1
 jump skipelse0
 .ifend0
 jump loopend0
@@ -53,7 +50,6 @@ drop 1
 push 1
 dup
 set 6
-drop 1
 .loop1
 get 6
 push 6
@@ -67,13 +63,11 @@ set 5
 drop 1
 get 5
 dbg
-.continue1
 get 6
 push 1
 add
 dup
 set 6
-drop 1
 jump skipelse1
 .ifend1
 jump loopend1
@@ -118,7 +112,6 @@ dbg
 push 2
 dup
 set 0
-drop 1
 .loop3
 get 0
 push 30
@@ -168,13 +161,11 @@ jumpf ifend6
 get 0
 dbg
 .ifend6
-.continue3
 get 0
 push 1
 add
 dup
 set 0
-drop 1
 jump skipelse3
 .ifend3
 jump loopend3

@@ -3,13 +3,11 @@ resn 1
 .loop0
 push 1
 dbg
-.continue0
 push 0
+not
 jumpf ifend0
-jump skipelse0
-.ifend0
 jump loopend0
-.skipelse0
+.ifend0
 jump loop0
 .loopend0
 push 10
@@ -25,41 +23,35 @@ add
 dup
 set 0
 drop 1
-.continue1
 get 0
 push 5
 cmplt
+not
 jumpf ifend1
-jump skipelse1
-.ifend1
 jump loopend1
-.skipelse1
+.ifend1
 jump loop1
 .loopend1
 .loop2
 push 3
 dbg
-.continue2
 push 0
+not
 jumpf ifend2
-jump skipelse2
-.ifend2
 jump loopend2
-.skipelse2
+.ifend2
 jump loop2
 .loopend2
 .loop3
 push 5
 dbg
-.continue3
 push 1
 push 2
 cmpeq
+not
 jumpf ifend3
-jump skipelse3
-.ifend3
 jump loopend3
-.skipelse3
+.ifend3
 jump loop3
 .loopend3
 get 0

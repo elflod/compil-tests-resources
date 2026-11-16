@@ -3,7 +3,6 @@ resn 2
 push 0
 dup
 set 0
-drop 1
 .loop0
 get 0
 push 5
@@ -11,13 +10,11 @@ cmplt
 jumpf ifend0
 get 0
 dbg
-.continue0
 get 0
 push 1
 add
 dup
 set 0
-drop 1
 jump skipelse0
 .ifend0
 jump loopend0
@@ -27,7 +24,6 @@ jump loop0
 push 0
 dup
 set 0
-drop 1
 .loop1
 get 0
 push 3
@@ -35,13 +31,11 @@ cmplt
 jumpf ifend1
 get 0
 dbg
-.continue1
 get 0
 push 1
 add
 dup
 set 0
-drop 1
 jump skipelse1
 .ifend1
 jump loopend1
@@ -51,7 +45,6 @@ jump loop1
 push 10
 dup
 set 0
-drop 1
 .loop2
 get 0
 push 5
@@ -59,13 +52,11 @@ cmpgt
 jumpf ifend2
 get 0
 dbg
-.continue2
 get 0
 push 2
 sub
 dup
 set 0
-drop 1
 jump skipelse2
 .ifend2
 jump loopend2
@@ -79,7 +70,6 @@ drop 1
 push 1
 dup
 set 0
-drop 1
 .loop3
 get 0
 push 100
@@ -91,13 +81,11 @@ add
 dup
 set 1
 drop 1
-.continue3
 get 0
 push 1
 add
 dup
 set 0
-drop 1
 jump skipelse3
 .ifend3
 jump loopend3
@@ -109,7 +97,6 @@ dbg
 push 1
 dup
 set 0
-drop 1
 .loop4
 get 0
 push 100
@@ -117,13 +104,11 @@ cmplt
 jumpf ifend4
 get 0
 dbg
-.continue4
 get 0
 push 3
 mul
 dup
 set 0
-drop 1
 jump skipelse4
 .ifend4
 jump loopend4
