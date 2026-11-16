@@ -1,0 +1,44 @@
+.start
+resn 0
+push 1
+jumpf ifend0
+.ifend0
+push 0
+jumpf ifend1
+.ifend1
+push 1
+jumpf ifend2
+jump skipelse2
+.ifend2
+push 1
+dbg
+.skipelse2
+push 0
+jumpf ifend3
+jump skipelse3
+.ifend3
+push 2
+dbg
+.skipelse3
+push 1
+jumpf ifend4
+push 3
+dbg
+jump skipelse4
+.ifend4
+.skipelse4
+push 0
+jumpf ifend5
+push 4
+dbg
+jump skipelse5
+.ifend5
+.skipelse5
+push 1
+jumpf ifend6
+jump skipelse6
+.ifend6
+.skipelse6
+push 5
+dbg
+halt

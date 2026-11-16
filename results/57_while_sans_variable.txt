@@ -1,0 +1,169 @@
+.start
+resn 0
+.loop0
+push 0
+jumpf ifend1
+push 1
+dbg
+jump skipelse1
+.ifend1
+jump loopend0
+.skipelse1
+jump loop0
+.loopend0
+.loop2
+push 1
+jumpf ifend3
+jump loopend2
+jump skipelse3
+.ifend3
+jump loopend2
+.skipelse3
+jump loop2
+.loopend2
+.loop4
+push 1
+jumpf ifend5
+push 1
+jumpf ifend6
+jump loopend4
+.ifend6
+jump skipelse5
+.ifend5
+jump loopend4
+.skipelse5
+jump loop4
+.loopend4
+.loop7
+push 1
+jumpf ifend8
+push 0
+jumpf ifend9
+push 2
+dbg
+jump skipelse9
+.ifend9
+jump loopend7
+.skipelse9
+jump skipelse8
+.ifend8
+jump loopend7
+.skipelse8
+jump loop7
+.loopend7
+push 3
+dbg
+.loop10
+push 0
+jumpf ifend11
+.loop12
+push 1
+jumpf ifend13
+jump loopend12
+jump skipelse13
+.ifend13
+jump loopend12
+.skipelse13
+jump loop12
+.loopend12
+jump skipelse11
+.ifend11
+jump loopend10
+.skipelse11
+jump loop10
+.loopend10
+push 1
+jumpf ifend14
+.loop15
+push 1
+jumpf ifend16
+jump loopend15
+jump skipelse16
+.ifend16
+jump loopend15
+.skipelse16
+jump loop15
+.loopend15
+jump skipelse14
+.ifend14
+push 4
+dbg
+.skipelse14
+push 0
+jumpf ifend17
+.loop18
+push 1
+jumpf ifend19
+jump loopend18
+jump skipelse19
+.ifend19
+jump loopend18
+.skipelse19
+jump loop18
+.loopend18
+jump skipelse17
+.ifend17
+push 5
+dbg
+.skipelse17
+.loop20
+push 1
+jumpf ifend21
+jump loopend20
+jump skipelse21
+.ifend21
+jump loopend20
+.skipelse21
+jump loop20
+.loopend20
+push 6
+dbg
+.loop22
+push 0
+jumpf ifend23
+push 1
+jumpf ifend24
+push 7
+dbg
+jump skipelse24
+.ifend24
+push 8
+dbg
+.skipelse24
+jump skipelse23
+.ifend23
+jump loopend22
+.skipelse23
+jump loop22
+.loopend22
+push 1
+jumpf ifend25
+.loop26
+push 0
+jumpf ifend27
+push 9
+dbg
+jump skipelse27
+.ifend27
+jump loopend26
+.skipelse27
+jump loop26
+.loopend26
+jump skipelse25
+.ifend25
+push 10
+dbg
+.skipelse25
+.loop28
+push 1
+jumpf ifend29
+jump loopend28
+jump skipelse29
+.ifend29
+jump loopend28
+.skipelse29
+jump loop28
+.loopend28
+push 11
+dbg
+halt

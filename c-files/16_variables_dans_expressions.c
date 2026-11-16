@@ -1,4 +1,3 @@
-void main()
 {
     int x, y, z;
     x = 3;

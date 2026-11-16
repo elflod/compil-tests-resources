@@ -1,4 +1,3 @@
-void main()
 {
     debug 1+1;
     debug 1+2+3+4+5;

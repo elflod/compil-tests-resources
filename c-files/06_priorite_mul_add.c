@@ -1,4 +1,3 @@
-void main()
 {
     debug 2+3*4;
     debug 3*4+2;
