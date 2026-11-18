@@ -1,4 +1,3 @@
-resn 0
 .fact
 resn 0
 get 0
@@ -18,7 +17,6 @@ mul
 ret
 push 0
 ret
-resn 0
 .main
 resn 0
 prep fact
