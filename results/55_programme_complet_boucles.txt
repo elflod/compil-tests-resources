@@ -1,4 +1,3 @@
-resn 0
 .main
 resn 7
 push 0

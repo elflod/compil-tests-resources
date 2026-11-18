@@ -1,11 +1,9 @@
-resn 0
 .f
 resn 0
 push 42
 ret
 push 0
 ret
-resn 0
 .main
 resn 0
 prep f
