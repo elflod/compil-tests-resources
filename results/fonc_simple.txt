@@ -1,0 +1,21 @@
+resn 0
+.f
+resn 0
+push 42
+ret
+push 0
+ret
+resn 0
+.main
+resn 0
+prep f
+call 0
+dbg
+push 0
+ret
+push 0
+ret
+.start
+prep main
+call 0
+halt
