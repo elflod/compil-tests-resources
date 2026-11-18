@@ -1,0 +1,26 @@
+resn 0
+.dbl
+resn 0
+get 0
+get 0
+add
+ret
+push 0
+ret
+resn 0
+.main
+resn 0
+prep dbl
+prep dbl
+push 3
+call 1
+call 1
+dbg
+push 0
+ret
+push 0
+ret
+.start
+prep main
+call 0
+halt
