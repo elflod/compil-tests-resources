@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 0
 push 1
 jumpf ifend0
@@ -41,4 +42,9 @@ jump skipelse6
 .skipelse6
 push 5
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt

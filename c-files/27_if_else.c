@@ -1,3 +1,4 @@
+int main ()
 {
     if (1) debug 1; else debug 2;
     if (0) debug 3; else debug 4;

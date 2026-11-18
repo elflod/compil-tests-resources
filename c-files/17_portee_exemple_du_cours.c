@@ -1,3 +1,4 @@
+int main ()
 {
     int X;
     X = 3;

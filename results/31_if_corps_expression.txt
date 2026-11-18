@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 1
 push 0
 dup
@@ -94,4 +95,9 @@ drop 1
 .ifend7
 get 0
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt

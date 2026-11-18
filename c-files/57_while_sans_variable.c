@@ -1,3 +1,4 @@
+int main ()
 {
     while (0) debug 1;
     while (1) break;

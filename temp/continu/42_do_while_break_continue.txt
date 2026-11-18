@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 1
 push 0
 dup
@@ -80,4 +81,9 @@ jump loop2
 .loopend2
 push 200
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt

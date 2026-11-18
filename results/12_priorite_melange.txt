@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 0
 push 1
 push 2
@@ -174,4 +175,9 @@ push 1
 sub
 cmpeq
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt

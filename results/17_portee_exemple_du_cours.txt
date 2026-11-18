@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 2
 push 3
 dup
@@ -14,4 +15,9 @@ get 1
 dbg
 get 0
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt
