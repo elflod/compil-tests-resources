@@ -1,3 +1,4 @@
+int main ()
 {
     int i, s;
     i = 0;

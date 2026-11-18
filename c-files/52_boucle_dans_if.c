@@ -1,3 +1,4 @@
+int main ()
 {
     int i;
     if (1) { for (i = 0; i < 3; i = i + 1) debug i; } else { while (1) debug 99; }

@@ -1,3 +1,4 @@
+int main ()
 {
     int i;
     for (i = 0; i < 2; i = i + 1) { int k; k = i * 10; debug k; }

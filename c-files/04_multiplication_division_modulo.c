@@ -1,3 +1,4 @@
+int main ()
 {
     debug 3*4;
     debug 2*3*4;

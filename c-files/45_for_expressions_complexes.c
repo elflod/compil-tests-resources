@@ -1,3 +1,4 @@
+int main ()
 {
     int i, j;
     for (i = j = 2; i < 5; i = i + 1) j = j + i;
