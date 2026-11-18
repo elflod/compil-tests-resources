@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 0
 push 3
 push 4
@@ -78,4 +79,9 @@ push 0
 push 12345
 mul
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt

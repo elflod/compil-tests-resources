@@ -1,4 +1,5 @@
-.start
+resn 0
+.main
 resn 1
 push 0
 dup
@@ -72,5 +73,10 @@ or
 dbg
 get 0
 dbg
+push 0
+ret
+.start
+prep main
+call 0
 halt
 
